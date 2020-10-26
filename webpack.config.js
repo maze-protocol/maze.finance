@@ -116,6 +116,10 @@ module.exports = () => {
                 template: './src/presale.pug',
                 filename: 'presale.html'
               }),
+              // new HtmlWebpackPlugin({
+              //   template: './src/tmp.pug',
+              //   filename: 'tmp.html'
+              // }),
               new HtmlWebpackPugPlugin(),
               new FaviconsWebpackPlugin({
                 logo: path.join(__dirname, 'src/images/logo48.png'),

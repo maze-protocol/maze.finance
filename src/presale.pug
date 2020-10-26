@@ -1,119 +1,125 @@
 doctype html
 html(lang='en')
 
-    head
+  head
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
+    meta(name='author', content='Maze Team')
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@maze_protocol')
+    mata(name='og:url', content='https://maze.finance')
+    mata(name='og:title', content='MAZE Protocol')
+    mata(name='og:description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
+    mata(name='og:image', content='https://maze.finance/images/maze-og.jpg')
 
-        title MAZE Presale | Secure fundraising protocol based on JustSwap and TRON Blockchain
+    title MAZE Protocol
 
-        // Favicon
-        link(rel='icon', type='image/png', href='images/logo48.png')
+    // Favicon
+    link(rel='icon', type='image/png', href='images/logo48.png')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+    // Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap', rel='stylesheet', type='text/css')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap', rel='stylesheet', type='text/css')
 
-        // Third party plugin CSS
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', rel='stylesheet')
+    // Third party plugin CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', rel='stylesheet')
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
+  body#page-top
 
-        div#particles.position-fixed
+    div#particles.position-fixed
 
 
 
-        // Masthead
-        header.masthead
-            .container.h-100
-                #countdown.row.h-100.align-items-center.justify-content-center.text-center(data-toggle="countdown")
-                    .col-lg-10.align-self-end
-                        img.img-fluid.mb-5(src="images/logo-big.png", alt="MAZE Logo", style="max-height: 70px;")
-                        h1.text-uppercase.text-white.font-weight-light.header &nbsp;
-                        hr.divider.my-4
-                    .col-lg-8.align-self-baseline.text-white
-                        .timer.d-flex.justify-content-center.mb-5
-                            div.text-center
-                                .day
-                                div Days
-                            div.text-center
-                                .separator :
-                            div.text-center
-                                .hour
-                                div Hours
-                            div.text-center
-                                .separator :
-                            day.text-center
-                                .minute
-                                div Minutes
-                            div.text-center
-                                .separator :
-                            div.text-center
-                                .second
-                                div Seconds
-                        p.text-white-75.mb-5
-                            | Secure fundraising protocol based on
-                            |
-                            a(href='https://justswap.io', target='_blank', rel='nofollow') JustSwap
-                            |
-                            | and
-                            |
-                            a(href='https://tron.network', target='_blank', rel='nofollow') TRON Blockchain
-                            | .
+    // Masthead
+    header.masthead
+      .container.h-100
+        #countdown.row.h-100.align-items-center.justify-content-center.text-center(data-toggle="countdown")
+          .col-lg-10.align-self-end
+            img.img-fluid.mb-5(src="images/logo-big.png", alt="MAZE Logo", style="max-height: 70px;")
+            h1.text-uppercase.text-white.font-weight-light.header &nbsp;
+            hr.divider.my-4
+          .col-lg-8.align-self-baseline.text-white
+            .timer.d-flex.justify-content-center.mb-5
+              div.text-center
+                .day
+                div Days
+              div.text-center
+                .separator :
+              div.text-center
+                .hour
+                div Hours
+              div.text-center
+                .separator :
+              day.text-center
+                .minute
+                div Minutes
+              div.text-center
+                .separator :
+              div.text-center
+                .second
+                div Seconds
+            p.text-white-75.mb-5
+              | Secure fundraising protocol based on
+              |
+              a(href='https://justswap.io', target='_blank', rel='nofollow') JustSwap
+              |
+              | and
+              |
+              a(href='https://tron.network', target='_blank', rel='nofollow') TRON Blockchain
+              | .
 
-        // Contact & Social
-        div#contact.bg-primary.py-5.position-relative
-            .container
-                .row.justify-content-center
-                    .col-lg-8.d-flex.justify-content-center
-                        a.mx-3.p-2.rounded-circle.text-center(href="http://twitter.com/maze_protocol")
-                            i.fab.fa-twitter.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="https://t.me/MAZEOfficial")
-                            i.fab.fa-telegram.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="https://github.com/maze-protocol")
-                            i.fab.fa-github.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="mailto:team@maze.finance")
-                            i.far.fa-envelope.fa-2x
-        // Footer
-        footer.bg-dark
-            div.py-5
-                .container
-                    .row.justify-content-center
-                        .col-lg-8.text-center.text-muted
-                            h5 Legal Disclaimer
-                            p.small
-                                | The information provided on this website does not constitute investment advice,
-                                | financial advice, trading advice, or any other sort of advice and you should not
-                                | treat any of the website's content as such. MAZE Team does not recommend that any
-                                | cryptocurrency should be bought, sold, or held by you. Do conduct your own due
-                                | diligence and consult your financial advisor before making any investment decisions.
-                            p.small
-                                | By purchasing MAZE , you agree that you are not purchasing a security or investment
-                                | and you agree to hold the team harmless and not liable for any losses or taxes you
-                                | may incur. You also agree that the team is presenting the token “as is” and is
-                                | not legally required to provide any support or services. You should have no
-                                | expectation of any form from MAZE and its team.
-                            p.small
-                                | Always make sure that you are in compliance with your local laws and regulations before
-                                | you make any purchase.
-                        .col-lg-8
-                            .small.text-center.text-muted © 2020 MAZE Team. All rights reserved.
+    // Contact & Social
+    div#contact.bg-primary.py-5.position-relative
+      .container
+        .row.justify-content-center
+          .col-lg-8.d-flex.justify-content-center
+            a.mx-3.p-2.rounded-circle.text-center(href="http://twitter.com/maze_protocol")
+              i.fab.fa-twitter.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="https://t.me/MAZEOfficial")
+              i.fab.fa-telegram.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="https://github.com/maze-protocol")
+              i.fab.fa-github.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="mailto:team@maze.finance")
+              i.far.fa-envelope.fa-2x
+    // Footer
+    footer.bg-dark
+      div.py-5
+        .container
+          .row.justify-content-center
+            .col-lg-8.text-center.text-muted
+              h5 Legal Disclaimer
+              p.small
+                | The information provided on this website does not constitute investment advice,
+                | financial advice, trading advice, or any other sort of advice and you should not
+                | treat any of the website's content as such. MAZE Team does not recommend that any
+                | cryptocurrency should be bought, sold, or held by you. Do conduct your own due
+                | diligence and consult your financial advisor before making any investment decisions.
+              p.small
+                | By purchasing MAZE , you agree that you are not purchasing a security or investment
+                | and you agree to hold the team harmless and not liable for any losses or taxes you
+                | may incur. You also agree that the team is presenting the token “as is” and is
+                | not legally required to provide any support or services. You should have no
+                | expectation of any form from MAZE and its team.
+              p.small
+                | Always make sure that you are in compliance with your local laws and regulations before
+                | you make any purchase.
+            .col-lg-8
+              .small.text-center.text-muted © 2020 MAZE Team. All rights reserved.
 
-        // Bootstrap core JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+    // Bootstrap core JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
 
-        // Third party plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    // Third party plugin JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
 
-        // Core theme JS
-        script(src='js/index.js')
+    // Core theme JS
+    script(src='js/index.js')

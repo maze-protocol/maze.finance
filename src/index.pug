@@ -1,352 +1,358 @@
 doctype html
 html(lang='en')
 
-    head
+  head
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
+    meta(name='author', content='Maze Team')
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@maze_protocol')
+    mata(name='og:url', content='https://maze.finance')
+    mata(name='og:title', content='MAZE Protocol')
+    mata(name='og:description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
+    mata(name='og:image', content='https://maze.finance/images/maze-og.jpg')
 
-        title MAZE | Secure fundraising protocol based on JustSwap and TRON Blockchain
+    title MAZE Protocol
 
-        // Favicon
-        link(rel='icon', type='image/png', href='images/logo48.png')
+    // Favicon
+    link(rel='icon', type='image/png', href='images/logo48.png')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+    // Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap', rel='stylesheet', type='text/css')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap', rel='stylesheet', type='text/css')
 
-        // Third party plugin CSS
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', rel='stylesheet')
+    // Third party plugin CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', rel='stylesheet')
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
+  body#page-top
 
-        div#particles.position-fixed
+    div#particles.position-fixed
 
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
-            .container
-                a#logo.navbar-brand.js-scroll-trigger(href='#page-top') &nbsp;
-                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ml-auto.my-2.my-lg-0
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#distribution') Token Distribution
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#tokenomics') Tokenomics
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#roadmap') Roadmap
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+      .container
+        a#logo.navbar-brand.js-scroll-trigger(href='#page-top') &nbsp;
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto.my-2.my-lg-0
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#about') About
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#distribution') Token Distribution
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#tokenomics') Tokenomics
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#roadmap') Roadmap
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#contact') Contact
 
-        // Masthead
-        header.masthead
-            .container.h-100
-                #countdown.row.h-100.align-items-center.justify-content-center.text-center(data-toggle="countdown")
-                    .col-lg-10.align-self-end
-                        h1.text-uppercase.text-white.font-weight-light.header &nbsp;
-                        hr.divider.my-4
-                    .col-lg-8.align-self-baseline.text-white
-                        .timer.d-flex.justify-content-center.mb-5
-                            div.text-center
-                                .day
-                                div Days
-                            div.text-center
-                                .separator :
-                            div.text-center
-                                .hour
-                                div Hours
-                            div.text-center
-                                .separator :
-                            day.text-center
-                                .minute
-                                div Minutes
-                            div.text-center
-                                .separator :
-                            div.text-center
-                                .second
-                                div Seconds
-                        p.text-white-75.mb-5
-                            | Secure fundraising protocol based on
-                            |
-                            a(href='https://justswap.io', target='_blank', rel='nofollow') JustSwap
-                            |
-                            | and
-                            |
-                            a(href='https://tron.network', target='_blank', rel='nofollow') TRON Blockchain
-                            | .
-                        .d-flex.justify-content-center.flex-column.flex-md-row
-                            a.btn.btn-primary.btn-xl.btn-xl.mr-0.mr-md-3.mb-3.mb-md-0(href='files/MAZE_WhitePaper.pdf') White paper
-                            a.btn.btn-outline-primary.btn-xl.ml-0.ml-md-3.mb-3.mb-md-0(href='https://sale.maze.finance') Buy Tokens
+    // Masthead
+    header.masthead
+      .container.h-100
+        #countdown.row.h-100.align-items-center.justify-content-center.text-center(data-toggle="countdown")
+          .col-lg-10.align-self-end
+            h1.text-uppercase.text-white.font-weight-light.header &nbsp;
+            hr.divider.my-4
+          .col-lg-8.align-self-baseline.text-white
+            .timer.d-flex.justify-content-center.mb-5
+              div.text-center
+                .day
+                div Days
+              div.text-center
+                .separator :
+              div.text-center
+                .hour
+                div Hours
+              div.text-center
+                .separator :
+              day.text-center
+                .minute
+                div Minutes
+              div.text-center
+                .separator :
+              div.text-center
+                .second
+                div Seconds
+            p.text-white-75.mb-5
+              | Secure fundraising protocol based on
+              |
+              a(href='https://justswap.io', target='_blank', rel='nofollow') JustSwap
+              |
+              | and
+              |
+              a(href='https://tron.network', target='_blank', rel='nofollow') TRON Blockchain
+              | .
+            .d-flex.justify-content-center.flex-column.flex-md-row
+              a.btn.btn-primary.btn-xl.btn-xl.mr-0.mr-md-3.mb-3.mb-md-0(href='files/MAZE_WhitePaper.pdf') White paper
+              a.btn.btn-outline-primary.btn-xl.ml-0.ml-md-3.mb-3.mb-md-0(href='https://sale.maze.finance') Buy Tokens
 
-        // About
-        section#about.page-section.bg-primary
-            .container
-                .row.justify-content-center
-                    .col-lg-8.text-center
-                        h2.text-white.mt-0 About
-                        hr.divider.light.my-4
-                .row.my-5
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            p.text-center.m-0
-                                i.fas.fa-money-bill-wave.text-primary.mb-4.fa-4x
-                            h5.text-center.mb-5
-                                | Multipurpose Crowdfunding
-                            p.text-center
-                                | MAZE supports many funding types as ICO's (token presales), Crowdfunding,
-                                | Charity fundings.
-                            p.text-center
-                                | Some funds are locked permanently (as liquidity pool on DAX for ICO's)
-                                | or temporary until community decides to unlock them (by voting).
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            p.text-center.m-0
-                                i.fas.fa-hands-helping.text-primary.mb-4.fa-4x
-                            h5.text-center.mb-5
-                                | Bet System
-                            p.text-center
-                                | Dynamically created Smart Contracts let players deposits their funds.
-                            p.text-center
-                                | Oracles integration or voting system decides the winnings and automatically
-                                | distributes prizes to winners
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            p.text-center.m-0
-                                i.fas.fa-shield-alt.text-primary.mb-4.fa-4x
-                            h5.text-center.mb-5
-                                | Secure
-                            p.text-center
-                                | Different funding mechanisms needs dedicated solutions.
-                            p.text-center
-                                | MAZE purpose is to have a different kinds of locking funds. Beneficiary can manage
-                                | only partially funds with the consent of the community (like in DAO).
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            p.text-center.m-0
-                                i.fas.fa-users.text-primary.mb-4.fa-4x
-                            h5.text-center.mb-5
-                                | Community Driven
-                            p.text-center
-                                | MAZE can creates a co-decision community (DAO) for every single project.
-                            p.text-center
-                                | Users can vote and take responsibility for their invested funds.
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            .tron.mb-4
-                            h5.text-center.mb-3
-                                | Based on Tron Blockchain
-                            p.text-center
-                                | TRON is one of the largest blockchain-based operating systems in the world.
-                            p.text-center
-                                | MAZE use TRON and the TRX Token (USDT, BTC and others in the future) to create and
-                                | manage presales and fundings.
-                    .col-12.col-md-6.col-lg-4.mb-5
-                        .bg-light.p-4.h-100
-                            .justswap.mb-4
-                            h5.text-center.mb-3
-                                | Uses JustSwap
-                            p.text-center
-                                | Most popular DEX on TRON for exchanges between TRC20 tokens.
-                            p.text-center
-                                | MAZE use JustSwap to lock liquidity pool for presales tokens.
-                                | It prevents exit scams to enlarge community trust.
-                .row.justify-content-center.mt-5
-                    .col-lg-8.text-center
-                        a.btn.btn-light.btn-xl.js-scroll-trigger(href='files/MAZE_WhitePaper.pdf') White Paper
+    // About
+    section#about.page-section.bg-primary
+      .container
+        .row.justify-content-center
+          .col-lg-8.text-center
+            h2.text-white.mt-0 About
+            hr.divider.light.my-4
+        .row.my-5
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              p.text-center.m-0
+                i.fas.fa-money-bill-wave.text-primary.mb-4.fa-4x
+              h5.text-center.mb-5
+                | Multipurpose Crowdfunding
+              p.text-center
+                | MAZE supports many funding types as ICO's (token presales), Crowdfunding,
+                | Charity fundings.
+              p.text-center
+                | Some funds are locked permanently (as liquidity pool on DAX for ICO's)
+                | or temporary until community decides to unlock them (by voting).
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              p.text-center.m-0
+                i.fas.fa-hands-helping.text-primary.mb-4.fa-4x
+              h5.text-center.mb-5
+                | Bet System
+              p.text-center
+                | Dynamically created Smart Contracts let players deposits their funds.
+              p.text-center
+                | Oracles integration or voting system decides the winnings and automatically
+                | distributes prizes to winners
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              p.text-center.m-0
+                i.fas.fa-shield-alt.text-primary.mb-4.fa-4x
+              h5.text-center.mb-5
+                | Secure
+              p.text-center
+                | Different funding mechanisms needs dedicated solutions.
+              p.text-center
+                | MAZE purpose is to have a different kinds of locking funds. Beneficiary can manage
+                | only partially funds with the consent of the community (like in DAO).
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              p.text-center.m-0
+                i.fas.fa-users.text-primary.mb-4.fa-4x
+              h5.text-center.mb-5
+                | Community Driven
+              p.text-center
+                | MAZE can creates a co-decision community (DAO) for every single project.
+              p.text-center
+                | Users can vote and take responsibility for their invested funds.
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              .tron.mb-4
+              h5.text-center.mb-3
+                | Based on Tron Blockchain
+              p.text-center
+                | TRON is one of the largest blockchain-based operating systems in the world.
+              p.text-center
+                | MAZE use TRON and the TRX Token (USDT, BTC and others in the future) to create and
+                | manage presales and fundings.
+          .col-12.col-md-6.col-lg-4.mb-5
+            .bg-light.p-4.h-100
+              .justswap.mb-4
+              h5.text-center.mb-3
+                | Uses JustSwap
+              p.text-center
+                | Most popular DEX on TRON for exchanges between TRC20 tokens.
+              p.text-center
+                | MAZE use JustSwap to lock liquidity pool for presales tokens.
+                | It prevents exit scams to enlarge community trust.
+        .row.justify-content-center.mt-5
+          .col-lg-8.text-center
+            a.btn.btn-light.btn-xl.js-scroll-trigger(href='files/MAZE_WhitePaper.pdf') White Paper
 
-        // Token distribution
-        mixin distributionListItem(title)
-            li.my-3.d-flex.align-items-center
-                span.mr-3.border.border-white.rounded(style!=attributes.style)
-                h4.m-0!= title
+    // Token distribution
+    mixin distributionListItem(title)
+      li.my-3.d-flex.align-items-center
+        span.mr-3.border.border-white.rounded(style!=attributes.style)
+        h4.m-0!= title
 
-        section#distribution.page-section
-            .container
-                .row
-                    .col-sm-12
-                        h2.text-center.mt-0.text-primary Token Distribution
-                        hr.divider.mt-4.mb-5
-                .row.align-items-center
-                    .col-sm-12.col-md-6.col-lg-4.offset-lg-2
-                        canvas#chartToken(width=400, height=400)
-                    .col-sm-12.col-md-6.col-lg-4
-                        ul.list-unstyled.text-white.font-weight-bold.mt-4.mt-md-0
-                            +distributionListItem('50% Presale')(style='background-color:rgb(126, 113, 193)')
-                            +distributionListItem('20% JustSwap')(style='background-color:rgb(255, 183, 77)')
-                            +distributionListItem('10% Staking Fund<sup>*</sup>')(style='background-color:rgb(76, 210, 177)')
-                            +distributionListItem('10% Team')(style='background-color:rgb(0, 188, 212)')
-                            +distributionListItem('10% Promotion')(style='background-color:rgb(255, 63, 24)')
-                            li.my-3
-                                p.text-muted.small <sup>*)</sup> Depends on Community Voting Results
-                .row
-                    .col-sm-12.mt-md-5
-                        h2.text-center.mt-5.text-primary Funds Distribution
-                        hr.divider.mt-4.mb-5
-                .row.align-items-center
-                    .col-sm-12.col-md-6.order-md-1.col-lg-4
-                        canvas#chartDistribution(width=400, height=400)
-                    .col-sm-12.col-md-6.order-md-0.col-lg-4.offset-lg-2
-                        ul.list-unstyled.text-white.font-weight-bold.mt-4.mt-md-0.right
-                            +distributionListItem('40% JustSwap')(style='background-color:rgb(255, 183, 77)')
-                            +distributionListItem('45% Team')(style='background-color:rgb(0, 188, 212)')
-                            +distributionListItem('15% Promotion & Growth')(style='background-color:rgb(255, 63, 24)')
-        // Tokenomics
-        section#tokenomics.page-section.bg-primary
-            .container
-                .row.justify-content-center
-                    .col-lg-8.text-center
-                        h2.mt-0 Tokenomics
-                        hr.divider.light.my-4
-                .row.justify-content-center.my-5
-                    .col-lg-8.text-justify.text-dark
-                        p
-                            | We know that many investors are focused on their profits more than fundamental ideas
-                            | behind projects.
-                        p
-                            | We respect this approach and we would also like to be attractive to them.
-                        p
-                            | Out presale supports referral system.
-                            | You can earn 2.5% every deposit made from your referral link.
-                            | We will transfer your earned TRX to your wallet immediately.
-                        p
-                            | Our other  suggestion is staking.
-                            | Presale contains voting.
-                            | Everyone who will deposits at least <b>50000 TRX</b> can vote about staking fund.
-                            | You can choose between three kinds of staking: MAZE token,
-                            | MAZE/TRX liquidity token,
-                            | multiple MAZE liquidity pairs.
-                            | You can also choose burning whole staking fund, but we don't recommend that.
-                        p
-                            | In plans we have fee for every commercial project on MAZE.
-                            | The fee will depends on the funding balance (eg. 1%).
-                            | Beneficiary will pay fee equivalent in MAZE tokens.
-                            | These tokens will be burned, which will increase the value of the single MAZE token.
-                        p
-                            | We will strive for listing on the most popular crypto exchanges.
-                            | We will build partnerships to increase the prestige of the MAZE token.
+    section#distribution.page-section
+      .container
+        .row
+          .col-sm-12
+            h2.text-center.mt-0.text-primary Token Distribution
+            hr.divider.mt-4.mb-5
+        .row.align-items-center
+          .col-sm-12.col-md-6.col-lg-4.offset-lg-2
+            canvas#chartToken(width=400, height=400)
+          .col-sm-12.col-md-6.col-lg-4
+            ul.list-unstyled.text-white.font-weight-bold.mt-4.mt-md-0
+              +distributionListItem('50% Presale')(style='background-color:rgb(126, 113, 193)')
+              +distributionListItem('20% JustSwap')(style='background-color:rgb(255, 183, 77)')
+              +distributionListItem('10% Staking Fund<sup>*</sup>')(style='background-color:rgb(76, 210, 177)')
+              +distributionListItem('10% Team')(style='background-color:rgb(0, 188, 212)')
+              +distributionListItem('10% Promotion')(style='background-color:rgb(255, 63, 24)')
+              li.my-3
+                p.text-muted.small <sup>*)</sup> Depends on Community Voting Results
+        .row
+          .col-sm-12.mt-md-5
+            h2.text-center.mt-5.text-primary Funds Distribution
+            hr.divider.mt-4.mb-5
+        .row.align-items-center
+          .col-sm-12.col-md-6.order-md-1.col-lg-4
+            canvas#chartDistribution(width=400, height=400)
+          .col-sm-12.col-md-6.order-md-0.col-lg-4.offset-lg-2
+            ul.list-unstyled.text-white.font-weight-bold.mt-4.mt-md-0.right
+              +distributionListItem('40% JustSwap')(style='background-color:rgb(255, 183, 77)')
+              +distributionListItem('45% Team')(style='background-color:rgb(0, 188, 212)')
+              +distributionListItem('15% Promotion & Growth')(style='background-color:rgb(255, 63, 24)')
+    // Tokenomics
+    section#tokenomics.page-section.bg-primary
+      .container
+        .row.justify-content-center
+          .col-lg-8.text-center
+            h2.mt-0 Tokenomics
+            hr.divider.light.my-4
+        .row.justify-content-center.my-5
+          .col-lg-8.text-justify.text-dark
+            p
+              | We know that many investors are focused on their profits more than fundamental ideas
+              | behind projects.
+            p
+              | We respect this approach and we would also like to be attractive to them.
+            p
+              | Out presale supports referral system.
+              | You can earn 2.5% every deposit made from your referral link.
+              | We will transfer your earned TRX to your wallet immediately.
+            p
+              | Our other  suggestion is staking.
+              | Presale contains voting.
+              | Everyone who will deposits at least <b>50000 TRX</b> can vote about staking fund.
+              | You can choose between three kinds of staking: MAZE token,
+              | MAZE/TRX liquidity token,
+              | multiple MAZE liquidity pairs.
+              | You can also choose burning whole staking fund, but we don't recommend that.
+            p
+              | In plans we have fee for every commercial project on MAZE.
+              | The fee will depends on the funding balance (eg. 1%).
+              | Beneficiary will pay fee equivalent in MAZE tokens.
+              | These tokens will be burned, which will increase the value of the single MAZE token.
+            p
+              | We will strive for listing on the most popular crypto exchanges.
+              | We will build partnerships to increase the prestige of the MAZE token.
 
 
-        // Roadmap
-        section#roadmap.page-section.text-white
-            .container.mt-5
-                .row.justify-content-center
-                    .col-lg-8.text-center
-                        h2.text-white.mt-0 Roadmap
-                        h4.text-white.text-primary.font-weight-light.py-4 Our Strategy and Project Plan
-                        hr.divider.light.my-4
-                .row.justify-content-center.roadmap
-                    .col-6.text-right.first
-                        h5 Octorber 2020
-                    .col-6.text-left.first
-                        p.item.checked
-                            span Website and Social Media Launch
-                        p.item.checked.nonext
-                            span Presale
-                    .col-6.text-right
-                        h5 November 2020
-                    .col-6.text-left
-                        p.itrm
-                            span JustSwap listing
-                        p.item
-                            span Staking (depends on users votes at presale)
-                        p.item
-                            span Listing on Additional Exchanges
-                    .col-6.text-right
-                        h5 December 2020
-                    .col-6.text-left
-                        p.item
-                            span Voting System (community presence in the decision-making process)
-                        p.item
-                            span Token Presale Support (presale, smart contract's verification, TronLink's liquidity pool to prevent exit scams)
-                    .col-6.text-right
-                        h5 February 2021
-                    .col-6.text-left
-                        p.item
-                            span Fully Automated ICO's Support and Certification
-                        p.item
-                            span Oracles Integration
-                        p.item
-                            span Multicurrency Funding (other than TRX but TRON based)
-                    .col-6.text-right
-                        h5 April 2021
-                    .col-6.text-left
-                        p.item
-                            span Crowdfunding Support
-                        p.item
-                            span Bet Support
-                        p.item
-                            span Charity funding Support
-                    .col-6.text-right
-                        h5 July 2021
-                    .col-6.text-left
-                        p.item
-                            span Website Supports all Co-Founding Mechanisms (ICO, Crowdfunding, Charity)
-                    .col-6.text-right
-                        h5 August 2021
-                    .col-6.text-left
-                        p.item
-                            span Mobile App (Android & IOS) with Own Tron Wallet (or Integration)
-                    .col-6.text-right
-                        h5 December 2021
-                    .col-6.text-left
-                        p.item
-                            span Website and Mobile Apps Bet's supports
+    // Roadmap
+    section#roadmap.page-section.text-white
+      .container.mt-5
+        .row.justify-content-center
+          .col-lg-8.text-center
+            h2.text-white.mt-0 Roadmap
+            h4.text-white.text-primary.font-weight-light.py-4 Our Strategy and Project Plan
+            hr.divider.light.my-4
+        .row.justify-content-center.roadmap
+          .col-6.text-right.first
+            h5 Octorber 2020
+          .col-6.text-left.first
+            p.item.checked
+              span Website and Social Media Launch
+            p.item.checked.nonext
+              span Presale
+          .col-6.text-right
+            h5 November 2020
+          .col-6.text-left
+            p.itrm
+              span JustSwap listing
+            p.item
+              span Staking (depends on users votes at presale)
+            p.item
+              span Listing on Additional Exchanges
+          .col-6.text-right
+            h5 December 2020
+          .col-6.text-left
+            p.item
+              span Voting System (community presence in the decision-making process)
+            p.item
+              span Token Presale Support (presale, smart contract's verification, TronLink's liquidity pool to prevent exit scams)
+          .col-6.text-right
+            h5 February 2021
+          .col-6.text-left
+            p.item
+              span Fully Automated ICO's Support and Certification
+            p.item
+              span Oracles Integration
+            p.item
+              span Multicurrency Funding (other than TRX but TRON based)
+          .col-6.text-right
+            h5 April 2021
+          .col-6.text-left
+            p.item
+              span Crowdfunding Support
+            p.item
+              span Bet Support
+            p.item
+              span Charity funding Support
+          .col-6.text-right
+            h5 July 2021
+          .col-6.text-left
+            p.item
+              span Website Supports all Co-Founding Mechanisms (ICO, Crowdfunding, Charity)
+          .col-6.text-right
+            h5 August 2021
+          .col-6.text-left
+            p.item
+              span Mobile App (Android & IOS) with Own Tron Wallet (or Integration)
+          .col-6.text-right
+            h5 December 2021
+          .col-6.text-left
+            p.item
+              span Website and Mobile Apps Bet's supports
 
-        // Contact & Social
-        div#contact.bg-primary.py-5.position-relative
-            .container
-                .row.justify-content-center
-                    .col-lg-8.d-flex.justify-content-center
-                        a.mx-3.p-2.rounded-circle.text-center(href="http://twitter.com/maze_protocol")
-                            i.fab.fa-twitter.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="https://t.me/MAZEOfficial")
-                            i.fab.fa-telegram.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="https://github.com/maze-protocol")
-                            i.fab.fa-github.fa-2x
-                        a.mx-3.p-2.rounded-circle.text-center(href="mailto:team@maze.finance")
-                            i.far.fa-envelope.fa-2x
-        // Footer
-        footer.bg-dark
-            div.py-5
-                .container
-                    .row.justify-content-center
-                        .col-lg-8.text-center.text-muted
-                            h5 Legal Disclaimer
-                            p.small
-                                | The information provided on this website does not constitute investment advice,
-                                | financial advice, trading advice, or any other sort of advice and you should not
-                                | treat any of the website's content as such. MAZE Team does not recommend that any
-                                | cryptocurrency should be bought, sold, or held by you. Do conduct your own due
-                                | diligence and consult your financial advisor before making any investment decisions.
-                            p.small
-                                | By purchasing MAZE , you agree that you are not purchasing a security or investment
-                                | and you agree to hold the team harmless and not liable for any losses or taxes you
-                                | may incur. You also agree that the team is presenting the token “as is” and is
-                                | not legally required to provide any support or services. You should have no
-                                | expectation of any form from MAZE and its team.
-                            p.small
-                                | Always make sure that you are in compliance with your local laws and regulations before
-                                | you make any purchase.
-                        .col-lg-8
-                            .small.text-center.text-muted © 2020 MAZE Team. All rights reserved.
+    // Contact & Social
+    div#contact.bg-primary.py-5.position-relative
+      .container
+        .row.justify-content-center
+          .col-lg-8.d-flex.justify-content-center
+            a.mx-3.p-2.rounded-circle.text-center(href="http://twitter.com/maze_protocol")
+              i.fab.fa-twitter.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="https://t.me/MAZEOfficial")
+              i.fab.fa-telegram.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="https://github.com/maze-protocol")
+              i.fab.fa-github.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="mailto:team@maze.finance")
+              i.far.fa-envelope.fa-2x
+    // Footer
+    footer.bg-dark
+      div.py-5
+        .container
+          .row.justify-content-center
+            .col-lg-8.text-center.text-muted
+              h5 Legal Disclaimer
+              p.small
+                | The information provided on this website does not constitute investment advice,
+                | financial advice, trading advice, or any other sort of advice and you should not
+                | treat any of the website's content as such. MAZE Team does not recommend that any
+                | cryptocurrency should be bought, sold, or held by you. Do conduct your own due
+                | diligence and consult your financial advisor before making any investment decisions.
+              p.small
+                | By purchasing MAZE , you agree that you are not purchasing a security or investment
+                | and you agree to hold the team harmless and not liable for any losses or taxes you
+                | may incur. You also agree that the team is presenting the token “as is” and is
+                | not legally required to provide any support or services. You should have no
+                | expectation of any form from MAZE and its team.
+              p.small
+                | Always make sure that you are in compliance with your local laws and regulations before
+                | you make any purchase.
+            .col-lg-8
+              .small.text-center.text-muted © 2020 MAZE Team. All rights reserved.
 
-        // Bootstrap core JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+    // Bootstrap core JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
 
-        // Third party plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    // Third party plugin JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
 
-        // Core theme JS
-        script(src='js/index.js')
+    // Core theme JS
+    script(src='js/index.js')
