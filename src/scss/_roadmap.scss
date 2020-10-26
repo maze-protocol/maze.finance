@@ -1,0 +1,91 @@
+#roadmap {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: url("../images/bg-roadmap.jpg") center no-repeat;
+    background-size: cover;
+    mask-image: -webkit-gradient(linear, left 1%, left 20%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+  }
+  .roadmap {
+    p {
+      position: relative;
+      margin: 0;
+      &::before {
+        position: absolute;
+        top: calc(.5rem + 5px);
+        left: (((-1 * $grid-gutter-width) / 2) - 6px);
+
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background: $white;
+        border-radius: 50%;
+      }
+      span {
+        &::before {
+          position: absolute;
+          top: 0;
+          bottom: calc(100% - .5rem);
+          bottom: 0;
+          left: (-$grid-gutter-width / 2 - 1px);
+          width: 1px;
+          content: "";
+          background: $white;
+        }
+        &::after {
+          position: absolute;
+          top: calc(.5rem + 5px);
+          bottom: 0;
+          left: (-$grid-gutter-width / 2 - 1px);
+          width: 1px;
+          content: "";
+          background: $white;
+        }
+        position: relative;
+        display: block;
+        padding: .5rem 0 1rem .5rem;
+      }
+      &.checked {
+        &::before { background: $primary; }
+        span {
+          &::before,
+          &::after { background: $primary; }
+        }
+        &.nonext {
+          span {
+            &::after {
+              background: $white;
+            }
+          }
+        }
+      }
+    }
+    h5 {
+      padding: .5rem .5rem 0 0;
+      margin: 0;
+    }
+    .first {
+      p:first-child {
+        &::before {
+          top: calc(1.5rem + 5px);
+        }
+        span {
+          &::after {
+            top: calc(1.5rem + 5px);
+          }
+          padding-top: 1.5rem;
+        }
+      }
+      h5 {
+        padding-top: 1.5rem;
+      }
+    }
+
+  }
+}

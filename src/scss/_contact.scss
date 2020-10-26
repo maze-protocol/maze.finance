@@ -1,0 +1,14 @@
+#contact {
+  a {
+    width: 4rem;
+    height: 4rem;
+    line-height: calc(4rem - 2px);
+    color: $white;
+    background-color: rgba($white, .3);
+    transition: all .5s ease-in-out;
+    &:hover {
+      color: $primary;
+      background-color: rgba($white, .8);
+    }
+  }
+}

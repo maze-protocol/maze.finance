@@ -1,0 +1,35 @@
+#countdown {
+  .timer {
+    line-height: 1;
+    color: $white;
+    .separator,
+    .day,
+    .hour,
+    .minute,
+    .second,
+    .date {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $primary;
+      @include media-breakpoint-up(md) {
+        width: 3ex;
+        font-size: 4rem;
+      }
+    }
+    .date {
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
+    }
+    .separator {
+      margin-right: .25rem;
+      margin-left: .25rem;
+      color: $gray-400;
+      @include media-breakpoint-up(md) {
+        width: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

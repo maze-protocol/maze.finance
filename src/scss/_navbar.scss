@@ -1,0 +1,76 @@
+// Base styling for the navbar
+#mainNav {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  transition: background-color .2s ease;
+  .navbar-brand {
+    @include sprite($logo-wide);
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: .75rem 0;
+        font-family: $font-family-sans-serif;
+        font-size: .9rem;
+        font-weight: $font-weight-bold;
+        color: $gray-600;
+        &:hover,
+        &:active {
+          color: $primary;
+        }
+        &.active {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    // Base styling for the navbar - screen sizes greater than the large breakpoint
+    box-shadow: none;
+    .navbar-brand {
+      @include sprite($logo-wide-white);
+      color: fade-out($white, .3);
+      &:hover {
+        color: $white;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0 1rem;
+          color: fade-out($white, .3);
+          &:hover {
+            color: $white;
+          }
+        }
+        &:last-child {
+          .nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    // Navbar styling applied when the page is scrolled
+    &.navbar-scrolled {
+      background-color: $white;
+      box-shadow: $box-shadow;
+      .navbar-brand {
+        @include sprite($logo-wide);
+        &:hover {
+          color: $primary;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $gray-900;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

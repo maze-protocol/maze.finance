@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-twbs-bootstrap/scss",
+    "stylelint-config-twbs-bootstrap/css"
+  ],
+  "rules": {
+    "scss/dollar-variable-default": null,
+    "at-rule-no-unknown": null,
+    "selector-max-id": 5,
+    "declaration-no-important": null
+  }
+}
