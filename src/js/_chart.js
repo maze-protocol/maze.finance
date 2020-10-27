@@ -60,9 +60,9 @@ window.onload = function () {
           borderWidth: 5,
           weight: 4,
           data: [
+            55,
             40,
-            45,
-            15
+            5
           ],
           backgroundColor: [
             'rgb(255, 183, 77)',
