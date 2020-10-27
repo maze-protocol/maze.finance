@@ -1,6 +1,6 @@
 /* eslint-disable no-new */
 /* eslint-disable no-undef */
-require('chart.js');
+// require('chart.js');
 window.onload = function () {
   const chartToken = document.getElementById('chartToken');
   if (chartToken) {
