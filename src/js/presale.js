@@ -2,13 +2,13 @@ import countdown from './_countdown';
 
 const start = (function () {
   const date = new Date();
-  date.setUTCFullYear(2020, 9, 30);
+  date.setUTCFullYear(2020, 10, 6);
   date.setUTCHours(18, 0, 0);
   return date;
 })();
 const end = (function () {
   const date = new Date();
-  date.setUTCFullYear(2020, 10, 6);
+  date.setUTCFullYear(2020, 10, 20);
   date.setUTCHours(18, 0, 0);
   return date;
 })();
