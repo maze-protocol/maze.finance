@@ -3,18 +3,17 @@ html(lang='en')
 
   head
 
+    title MAZE Protocol
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
     meta(name='author', content='Maze Team')
     meta(name='twitter:card', content='summary_large_image')
     meta(name='twitter:site', content='@maze_protocol')
-    mata(name='og:url', content='https://maze.finance')
-    mata(name='og:title', content='MAZE Protocol')
-    mata(name='og:description', content='Secure fundraising protocol based on JustSwap and TRON Blockchain')
-    mata(name='og:image', content='https://maze.finance/images/maze-og.jpg')
-
-    title MAZE Protocol
+    meta(property="og:url", content="https://maze.finance")
+    meta(property="og:title", content="MAZE Protocol")
+    meta(property="og:description", content="Secure fundraising protocol based on JustSwap and TRON Blockchain")
+    meta(property="og:image", content="https://maze.finance/images/maze-og.jpg")
 
     // Favicon
     link(rel='icon', type='image/png', href='images/logo48.png')
@@ -27,6 +26,13 @@ html(lang='en')
 
     // Core theme CSS (includes Bootstrap)
     link(href='css/styles.css', rel='stylesheet')
+
+    script(async='', src="https://www.googletagmanager.com/gtag/js?id=G-2ZGNC1H3J8")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2ZGNC1H3J8');
 
   body#page-top
 
@@ -70,7 +76,7 @@ html(lang='en')
                 div Hours
               div.text-center
                 .separator :
-              day.text-center
+              div.text-center
                 .minute
                 div Minutes
               div.text-center
@@ -314,6 +320,8 @@ html(lang='en')
               i.fab.fa-twitter.fa-2x
             a.mx-3.p-2.rounded-circle.text-center(href="https://t.me/MAZEOfficial")
               i.fab.fa-telegram.fa-2x
+            a.mx-3.p-2.rounded-circle.text-center(href="https://maze-protocol.medium.com")
+              i.fab.fa-medium.fa-2x
             a.mx-3.p-2.rounded-circle.text-center(href="https://github.com/maze-protocol")
               i.fab.fa-github.fa-2x
             a.mx-3.p-2.rounded-circle.text-center(href="mailto:team@maze.finance")
